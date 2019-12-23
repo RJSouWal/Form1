@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*,*::after,*::before{
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #222;
+			color: white;
+
+			animation: bgChange 10s ease 0s infinite;
+		}
+
+		@keyframes bgChange{
+			0%  {background-color: #222;}
+			25% {background-color: #333;}
+			50% {background-color: #444;}
+			75% {background-color: #333;}
+			100%{background-color: #222;}
+		}
+
+	</style>
+	<title>Forms</title>
+</head>
+<body>
+	This is a forms testing.
+
+	<form method="post" netlify>
+		 <table style="border: 0;">
+		 	<tr>
+		 		<td>
+		 			Name:
+		 		</td>
+		 		<td>
+		 			<input type="text" name="name" placeholder="Your Name" autocomplete="off">
+		 		</td>
+		 	</tr>
+		 	<tr>
+		 		<td>
+		 			Class:
+		 		</td>
+		 		<td>
+		 			<input type="text" name="class" placeholder="Your Class" autocomplete="off">
+		 		</td>
+		 	</tr>
+		 	<tr>
+		 		<td>
+		 			Roll no:
+		 		</td>
+		 		<td>
+		 			<input type="text" name="roll-no" placeholder="Your Roll no." autocomplete="off">
+		 		</td>
+		 	</tr>
+		 	<tr>
+		 		<td>
+		 			Email:
+		 		</td>
+		 		<td>
+		 			<input type="text" name="email" placeholder="Your Email" autocomplete="off">
+		 		</td>
+		 	</tr>
+		 	<tr>
+		 		<td></td>
+		 		<td>
+		 			<input type="submit" name="submit" value="Submit" style="width: 100px;">
+		 		</td>
+		 	</tr>
+		 </table>
+	</form>
+
+</body>
+</html>
